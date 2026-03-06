@@ -1,0 +1,41 @@
+[package]
+name = "claudelytics"
+version = "0.5.2"
+edition = "2024"
+description = "A fast CLI tool for analyzing Claude Code usage patterns, token consumption, and costs"
+authors = ["jy1655"]
+license = "MIT"
+repository = "https://github.com/jy1655/claudelytics"
+homepage = "https://github.com/jy1655/claudelytics"
+documentation = "https://github.com/jy1655/claudelytics"
+readme = "README.md"
+keywords = ["claude", "analytics", "cli", "usage", "tokens"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = ["target/", ".git/", ".github/"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1.0"
+walkdir = "2.3"
+comfy-table = "7.0"
+colored = "2.0"
+tokio = { version = "1.0", features = ["full"] }
+rayon = "1.8"
+crossterm = "0.28"
+fuzzy-matcher = "0.3"
+csv = "1.3"
+notify = "6.1"
+serde_yaml = "0.9"
+ratatui = "0.28"
+copypasta = "0.10"
+regex = "1.10"
+dirs = "5.0"
+terminal_size = "0.4"
+tempfile = "3.8"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+ctrlc = "3.4"
+
+[dev-dependencies]
