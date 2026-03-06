@@ -53,36 +53,10 @@ This repository is an independently maintained fork of [nwiizo/claudelytics](htt
 
 ## 🚀 Installation
 
-### From GitHub Releases (Recommended for this fork)
+### Option 1: GitHub Releases (Recommended for this fork)
 
 ```bash
-# Download and run install script
-curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
-```
-
-The install script downloads release binaries published from this fork repository.
-
-### From Source
-
-```bash
-# Clone the repository
-git clone https://github.com/jy1655/claudelytics.git
-cd claudelytics
-
-# Build release version
-cargo build --release
-
-# Install to system (requires ~/.cargo/bin in PATH)
-cargo install --path .
-
-# Or copy binary to a directory in your PATH
-sudo cp target/release/claudelytics /usr/local/bin/
-```
-
-### Quick Install Script
-
-```bash
-# Download and run install script
+# Install latest release from this repository
 curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
 
 # Install to custom directory
@@ -95,9 +69,29 @@ curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh
 curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash -s -- --help
 ```
 
-### About Crates.io
+The install script downloads binaries from this fork's GitHub Releases and verifies SHA256 checksums when available.
 
-`claudelytics` on crates.io currently points to the upstream project (`nwiizo/claudelytics`), not this fork.
+### Option 2: Build from source
+
+```bash
+# Clone this fork
+git clone https://github.com/jy1655/claudelytics.git
+cd claudelytics
+
+# Build release binary
+cargo build --release
+
+# Install via Cargo (to ~/.cargo/bin)
+cargo install --path .
+
+# Or copy binary to a directory in your PATH
+sudo cp target/release/claudelytics /usr/local/bin/
+```
+
+### About Crates.io (Important)
+
+`cargo install claudelytics` currently installs the upstream crate (`nwiizo/claudelytics`), not this fork.
+For this fork, use GitHub Releases (install script) or build from source.
 
 The install script:
 - Automatically detects your OS and architecture
@@ -109,7 +103,8 @@ The install script:
 
 ### Prerequisites
 
-- Rust 1.70+ and Cargo
+- For release install: `curl` or `wget`, and `tar`
+- For source build: Rust 1.70+ and Cargo
 - Claude Code installed and used at least once (creates `~/.claude` directory)
 
 ## 📋 Quick Start
