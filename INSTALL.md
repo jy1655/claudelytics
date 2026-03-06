@@ -47,7 +47,7 @@ For a quick installation without Homebrew:
 curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
 
 # Or with custom install directory
-CLAUDELYTICS_INSTALL_DIR=/usr/local/bin curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
+INSTALL_DIR=/usr/local/bin curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
 ```
 
 ### What the script does:
@@ -67,17 +67,13 @@ Visit the [Releases page](https://github.com/jy1655/claudelytics/releases) and d
 - **macOS (Intel)**: `claudelytics-x86_64-apple-darwin.tar.gz`
 - **macOS (Apple Silicon)**: `claudelytics-aarch64-apple-darwin.tar.gz`
 - **Linux (x86_64)**: `claudelytics-x86_64-unknown-linux-gnu.tar.gz`
-- **Linux (ARM64)**: `claudelytics-aarch64-unknown-linux-gnu.tar.gz`
-- **Windows**: `claudelytics-x86_64-pc-windows-msvc.zip`
+- **Windows**: `claudelytics-x86_64-pc-windows-msvc.tar.gz`
 
 ### Step 2: Extract
 
 ```bash
 # For tar.gz files
 tar -xzf claudelytics-*.tar.gz
-
-# For zip files (Windows)
-unzip claudelytics-*.zip
 ```
 
 ### Step 3: Install
