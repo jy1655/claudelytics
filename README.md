@@ -53,14 +53,14 @@ This repository is an independently maintained fork of [nwiizo/claudelytics](htt
 
 ## 🚀 Installation
 
-### From Crates.io (Recommended)
+### From GitHub Releases (Recommended for this fork)
 
 ```bash
-# Install directly from crates.io
-cargo install claudelytics
+# Download and run install script
+curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash
 ```
 
-📦 **Crates.io**: https://crates.io/crates/claudelytics
+The install script downloads release binaries published from this fork repository.
 
 ### From Source
 
@@ -94,6 +94,10 @@ curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh
 # View install options
 curl -fsSL https://raw.githubusercontent.com/jy1655/claudelytics/main/install.sh | bash -s -- --help
 ```
+
+### About Crates.io
+
+`claudelytics` on crates.io currently points to the upstream project (`nwiizo/claudelytics`), not this fork.
 
 The install script:
 - Automatically detects your OS and architecture
