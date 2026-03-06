@@ -13,7 +13,7 @@ echo
 
 # Test 2: Show what would be installed (dry run)
 echo "Test 2: Testing platform detection"
-./install.sh --dir /tmp/test-claudelytics --version v0.4.3 || true
+./install.sh --dir /tmp/test-claudelytics --version v0.5.2 || true
 echo
 
 # Clean up
